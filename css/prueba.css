@@ -1,0 +1,667 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  .body {
+    background: #747C8C; 
+  }
+  a {
+    text-decoration: none;
+  }
+  
+.fixed{
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+      }
+      .main__header {
+        background: linear-gradient(180deg, #0D0D0D 19.79%, #575757 54.17%, rgba(162, 162, 162, 0.58) 79.69%, rgba(255, 255, 255, 0) 100%);
+        background-blend-mode: multiply;
+        color: white;
+        position: fixed;
+        display: grid; 
+        width: 100vw;
+        grid-template-columns: 24% auto;
+        align-items: center;
+        
+      }
+      
+      .inicio_icons{
+        
+          list-style-image: url(../img/inicio_icons.svg)
+      }
+      .nosotros_icons{
+        
+          list-style-image: url(../img/nosotros_icons.svg)
+      }
+      
+      .servicios_icons{
+        
+          list-style-image: url(../img/servicio_icons.svg)
+      }
+      .proyectos_icons{
+        
+          list-style-image: url(../img/proyecto_icons.svg)
+      }
+      .contactos_icons{
+        
+          list-style-image: url(../img/contacto_icons.svg)
+      }
+      
+      .main {
+        font-size: 0;
+      }
+
+      .main__header ul li {
+        width: 16%;
+        padding-left: 0%;
+      }
+      .main__header a {
+        color: rgba(255, 255, 255, 1);
+      }
+      
+      .main_header_nav {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        gap: 0 2%;
+      }   
+      .main__header ul {
+        font-size: 1;
+      }
+      
+      .main__header ul ul{
+        display: none;
+        position: absolute;
+        width: 70px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+        text-align: center;
+      background: linear-gradient(180deg, #0D0D0D 19.79%, #575757 54.17%, rgba(162, 162, 162, 0.58) 79.69%, rgba(255, 255, 255, 0) 100%);
+      background-blend-mode: multiply;
+      }
+      .main__header ul ul li{
+        display: block;
+      }
+      .main__header ul li:hover ul{
+        display: block;
+      }
+      .main__footer {
+        width: 100%;
+        height: 127px;
+        background: #171c26;
+      }
+      .main__footer p {
+        color: rgba(228, 230, 233, 1);
+      }
+      
+      .main__title {
+        font-style: normal;
+        font-size: 3em;
+        font-family: "Roboto";
+        text-align: center;
+        line-height: 1.6;
+      }
+      .our_portada {
+        width: 100%;
+        height: 100%;}   
+ .boton_portada {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        left: 46%;
+        top: 107%;
+        z-index: 1;
+        background: #0d0d0d;
+        border-radius: 50px;
+        text-align: center;
+        align-items: center;
+        color: aliceblue;           
+ }
+ .logo_footer{
+    animation-name: logo_footer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+ }
+        .nosotros_servicios {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        align-content: stretch;
+        left: 69px;
+        top: 51px;
+        margin-top: -1%; 
+      }
+      .nosotros_servicios h2{
+        color:#FFFFFF;
+      }
+      .nosotros_servicios p{
+        color: #FFFFFF;
+      }
+      .sub_titulo_nosotros{
+        color: #FE4461;
+      }
+      .sub_titulo_servicios{
+        color: #0D0D0D;
+      }
+      .nosotros_servicios ul {
+        color: #F2F2F2;
+      }
+      .nosotros {
+        background: #171c26;   
+        text-align:left;
+        width: 100%;
+      }  
+
+      .lista_nosotros li{
+        list-style: none;
+        background-image: url(../img/icons_lista_nosotros.svg);
+        background-repeat: no-repeat;
+        padding: 1% 0 1% 4%;
+        margin: 2%;
+      }
+      
+      
+      .nosotros_texto{
+        margin-top: 50px;
+        margin-left: 25px;
+      }
+      .nosotros_texto ul li{
+        width: 100%;   
+      }
+        .servicios {
+        background: #747c8c;
+        width: 100%;
+      }
+
+      .lista_servicios li{
+        list-style: none;
+       background-image: url(../img/icons_lista_servicio.svg);
+       background-repeat: no-repeat;
+       padding: 1% 0 1% 4%;
+       margin: 2%;
+      }
+      .servicios_texto{
+        margin-top: 50px;
+        margin-left: 25px;
+      }
+   .proyectos_real {
+        width: 100%;
+        height: 100%;
+      } 
+
+      .our__proyect__one_boton {
+        position: absolute;
+        width: 200px;
+        height: 50px;
+        left: 555px;
+        top: 600px;
+        border: #fe4461;
+        background: #fe4461;
+        box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.38);
+        border-radius: 50px;
+        text-align: center;
+        align-items: center;
+        left: 46%;
+        top: 193%;
+      }
+      .contactos_principal{
+          display: grid;  
+        margin-top: -1%;
+        
+      } 
+      .contactos {
+        display: grid;
+        flex-direction: row;
+        align-content: stretch;
+        width: 100%;
+        grid-template-columns: repeat(4,1fr);
+      }
+      .contactos p{
+        color: #FFFFFF;
+      }
+      .contacto_programas {
+        background: #fe4461;
+      align-items: center; 
+      text-align: center;
+      color: #171C26;
+      width: 100%;
+      height: 200px;
+      
+      }
+      .contacto_programas:hover {
+          transform: scale(1.3);
+          border-radius: 30px;
+         transition: all 1s;
+    }
+       .contacto_caracteristicas:hover {
+          transform: scale(1.3);
+          border-radius: 30px;
+          transition: all 1s;
+    }  
+    .contacto_galeria:hover {
+          transform: scale(1.3);
+          border-radius: 30px;
+          transition: all 1s;}
+     .contacto_recursos:hover {
+            transform: scale(1.3) ;
+            border-radius: 30px;
+            transition: all 1s
+            !important;
+        }    
+
+      .contacto_caracteristicas {
+        background: #171c26;
+        text-align: center;
+        text-align: center;
+        color: #FE4461;
+        width: 100%;
+      }
+   
+      .contacto_galeria {
+        background: #747c8c;
+        text-align: center;
+        text-align: center;
+        color: #171C26;
+        width: 100%;
+      }
+      
+     
+      .contacto_recursos {
+        background: #0d0d0d;
+        text-align: center;
+        text-align: center;
+        color: #FE4461;
+        width: 100%;
+      }
+      .contacto_recursos:hover {
+        transform: scale(1.3);
+        border-radius: 30px;}
+        /* inicio de las animaciones*/
+        @keyframes logo_footer {   
+           0%, 100%{
+            transform:translate(-6px, -6px)
+        }
+        25%{
+            transform:translate( 6px, -6px)
+        }
+        50%{
+            transform:translate( 6px,6px)
+        }
+        75%{
+            transform:translate(-6px, 6px)
+        } 
+    }
+      
+        
+   
+     @media (max-width: 1440px) { 
+
+      .boton_portada { 
+        height: 50px;
+        margin-top: -8%;
+        left: 43%;
+      }      
+      .lista_nosotros li{
+         padding: 4px 25px;
+          margin: 6px 0 2px 183px;
+        }      
+       .nosotros_texto{
+        margin-top: 50px;
+        margin-left: 25px;
+      }     
+      .lista_servicios li{
+       padding: 4px 25px;
+       margin: 6px 0 10px 183px;
+      }
+      .servicios_texto{
+        margin-top: 50px;
+        margin-left: 25px;
+      }   
+      .our__proyect__one_boton {     
+        left: 42%;
+        margin-top: 20%;  
+     }
+     .contacto_programas:hover {
+        transform: scale(1.3);
+        border-radius: 30px;
+    }
+     .contacto_caracteristicas:hover {
+      transform: scale(1.3);
+      border-radius: 30px;
+  }  
+  .contacto_galeria:hover {
+      transform: scale(1.3);
+      border-radius: 30px;}
+      .contacto_recursos:hover {
+          transform: scale(1.3);
+          border-radius: 30px;} }
+     
+
+    @media (max-width: 1024px)  { 
+          .boton_portada {
+            position: absolute;
+            width: 200px;
+            height: 50px;
+
+            top: 460px;
+            z-index: 1;
+            background: #0d0d0d;
+            border-radius: 50px;
+            text-align: center;
+            align-items: center;
+            color: aliceblue;
+            margin-top: -14%;
+            left: 40%; 
+          }
+          .lista_nosotros li{
+            list-style: none;
+            background-image: url(../img/icons_lista_nosotros.svg);
+            background-repeat: no-repeat;
+            padding: 4px 25px;
+            margin: 6px 0 10px 99px;
+            }
+           .nosotros_texto{
+            margin-top: 30px;
+            margin-left: 34px;
+          } 
+          .lista_servicios li{
+            list-style: none;
+           background-image: url(../img/icons_lista_servicio.svg);
+           background-repeat: no-repeat;
+           padding: 4px 25px;
+           margin: 6px 0 10px 99px;
+          }
+          .servicios_texto{
+            margin-top: 30px;
+            margin-left: 34px;
+          }
+          .our__proyect__one_boton {
+            position: absolute;
+            width: 200px;
+            height: 50px;
+            top: 600px;
+            border: #fe4461;
+            background: #fe4461;
+            box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.38);
+            border-radius: 50px;
+            text-align: center;
+            align-items: center;            
+            left: 40%;
+            margin-top: 10%; 
+          }
+          .contacto_programas:hover {
+            transform: scale(1.3);
+            border-radius: 30px;
+        }
+         .contacto_caracteristicas:hover {
+          transform: scale(1.3);
+          border-radius: 30px;
+      }  
+      .contacto_galeria:hover {
+          transform: scale(1.3);
+          border-radius: 30px;}
+          .contacto_recursos:hover {
+              transform: scale(1.3);
+              border-radius: 30px;} 
+        }
+        @media (max-width: 768px)  { 
+
+              .boton_portada {
+                    position: absolute;
+                    height: 48px;
+                    top: 438px;
+                    background: #0d0d0d;
+                    border-radius: 50px;
+                    text-align: center;
+                    align-items: center;
+                    color: aliceblue;
+                    margin-top: -26%;
+                    left: 37%;
+              }
+              .lista_nosotros li{
+                list-style: none;
+                background-image: url(../img/icons_lista_nosotros.svg);
+                background-repeat: no-repeat;
+                padding: 4px 25px;
+                margin: 9px 0 10px 62px;
+                }
+               .nosotros_texto{
+                margin: 9%;
+              } 
+              .lista_servicios li{
+                list-style: none;
+               background-image: url(../img/icons_lista_servicio.svg);
+               background-repeat: no-repeat;
+               padding: 4px 25px;
+               margin: 9px 0 10px 62px;
+              }
+              .servicios_texto{
+                margin: 9%;
+              }
+              .our__proyect__one_boton {
+                position: absolute;
+                width: 199px;
+                height: 42px;
+                top: 599px;
+                border: #fe4461;
+                background: #fe4461;
+                box-shadow: 0px 10px 32px 8px rgb(0 0 0 / 38%);
+                border-radius: 50px;
+                text-align: center;
+                align-items: center;
+                left: 38%;
+                margin-top: 5%;
+            }
+            .contacto_programas:hover {
+                transform: scale(1.3);
+                border-radius: 30px;
+            }
+             .contacto_caracteristicas:hover {
+              transform: scale(1.3);
+              border-radius: 30px;
+          }  
+          .contacto_galeria:hover {
+              transform: scale(1.3);
+              border-radius: 30px;}
+              .contacto_recursos:hover {
+                  transform: scale(1.3);
+                  border-radius: 30px;} 
+        }
+
+@media(max-width:375px){
+    a {
+        text-decoration: none;
+      }
+    .fixed{
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+          }
+          .main__header {
+            background: linear-gradient(180deg, #0D0D0D 19.79%, #575757 54.17%, rgba(162, 162, 162, 0.58) 79.69%, rgba(255, 255, 255, 0) 100%);
+            background-blend-mode: multiply;
+            color: white;
+            position: absolute;
+            display: flex; 
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+          }
+           .main_header_nav {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 15px;
+            margin: 0% -19% 0%;
+          }
+          .main_header_nav li{
+              padding-left: 20px;
+              list-style: none;
+          }
+        
+       
+          
+        .main {
+            font-size: 0;
+          }
+          .main__header ul li {
+            width: 16%;
+            
+          }
+          .main__header a {
+            color: rgba(255, 255, 255, 1);
+          }
+         .our_portada {
+            width: 100%;
+            height: 100%;
+            height: 280px;}  
+         
+          
+         .main__header ul {
+            font-size: 1;
+          }
+          .main__footer {
+            width: 100%;
+            height: 140px;
+           
+          }
+          
+          
+          .main__title {
+            font-style: normal;
+            font-size: 3em;
+            font-family: "Roboto";
+            text-align: center;
+            line-height: 1.6;
+          }
+            
+     .boton_portada {
+          
+            left: 24%;
+            top: 65%;
+     }
+    
+            .nosotros_servicios {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-content: stretch;
+            left: 69px;
+            top: 51px;
+            margin-top: -1%; 
+          }
+          .nosotros_servicios h2{
+            
+            margin: 36px 42px;
+          }
+          .nosotros_servicios p{
+           
+            margin: 13px 133px 15px 15px;
+          }
+       
+         
+          .nosotros {
+            
+            height: 100%;
+            text-align:left;
+            width: 100%;
+          }  
+    
+          .lista_nosotros li{
+           
+            padding: 2% 0% 0% 8%;
+            margin: 7% 16% 13%;
+          }
+          
+          
+          .nosotros_texto{
+            margin-top: 50px;
+            margin-left: 25px;
+          }
+          .nosotros_texto ul li{
+            width: 100%;   
+          }
+            .servicios {
+            
+            width: 100%;
+          }
+    
+          .lista_servicios li{
+           
+           padding: 2% 0% 0% 8%;
+           margin: 7% 16% 13%;
+          }
+          .servicios_texto{
+            margin-top: 50px;
+            margin-left: 25px;
+          }
+       .proyectos_real {
+            width:100%;
+            height:100%;
+            height: 280px;
+          } 
+    
+          .our__proyect__one_boton {
+            left: 25%;
+            top: 276%;
+        
+          }
+          .contactos_principal{
+              display: flex;
+              
+            margin-top: -1%;
+          }
+          .contactos {
+            display: flex;
+            flex-direction: column;
+            align-content: stretch;
+            width: 100%;
+          }
+          .contactos p{
+             
+            margin: 48px;
+    
+          }
+          .contacto_programas {
+           
+          width: 100%;
+          height: 200px;
+          height: 268px;
+          
+          }
+          .contacto_caracteristicas {
+           
+            width: 100%;
+            height: 268px;
+          }
+          .contacto_galeria {
+           
+        
+            width: 100%;
+            height: 268px;
+          }
+          .contacto_recursos {
+           
+            width: 100%;
+            height: 268px;
+          }
+        
+        .contacto_programas:hover {
+            transform: scale(1.3);
+            border-radius: 30px;
+        }
+         .contacto_caracteristicas:hover {
+          transform: scale(1.3);
+          border-radius: 30px;
+      }  
+      .contacto_galeria:hover {
+          transform: scale(1.3);
+          border-radius: 30px;}
+          .contacto_recursos:hover {
+              transform: scale(1.3);
+              border-radius: 30px;} }
