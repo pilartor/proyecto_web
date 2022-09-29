@@ -6,41 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/fav-icon.svg" />
-    <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/prueba.css"> <!---->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script> 
     <title>CampuHause</title>
 </head>
 
 <body class="body">
     <header class="main__header">
         <img src="./img/fav-icon.svg" alt="logo empresa" />
-        <nav>
-            <ul class="main_header_nav">
-                <li>
-                    <a class="active" href="./index.html">Inicio</a>
+        <nav class="navbar navbar-expand-lg  ">
+            
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/index.html">Inicio 
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/nosotros.html">Nosotros</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/proyectos.html">Proyectos</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="/servicios.html" id="navbarDropdown" role="button" 
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Servicios
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
                 </li>
-                <li>
-                    <a href="./nosotros.html">Nosotros</a>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
                 </li>
-                <li>
-                    <a href="./servicios.html">Servicios</a>
-                    <ul>
-                        <li>
-                            <a href="./webs.html">Webs</a>
-                        </li>
-                        <li>
-                            <a href="./apps.html">Apps</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="./proyectos.html">Proyectos</a>
-                </li>
-                <li>
-                    <a href="./contacto.html#formulario">Contacto</a>
-                </li>
-            </ul>
-        </nav>
+              </ul>
+             
+            </div>
+          </nav>
     </header>
     <main>
         <div>
@@ -48,38 +58,53 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati laborum debitis, tempora illum aperiam cupiditate temporibus architecto velit incidunt beatae.</p>
         </div>
     </main>
-    <form action="" id="formulario">
-        
-        <input type="text"name="name" placeholder="colocar nombre completo">
-        
-        <input type="email"name="email" placeholder="colocar correo">
-        
-        <input type="password"name="password" placeholder="colocar contraseña">
-        
-        <textarea name="message" cols="30" rows="10" placeholder="comentario"></textarea>
-        <label for="bussines">pyme</label>
-        <input type="radio" name="bussines" value="pyme">
-        <label for="bussines">gran empresa</label>
-        <input type="radio" name="bussines" value="empresa grande">
-        <label for="accept">aceptar terminos y condiciones</label>
-        <input type="checkbox" name="accept" value="si"checked>
-        <label for="services">servicios</label>
-        <select name="services" id="">
-            <option value="web">Web</option>
-            <option value="apps">Apps</option>
-            <option value="apps">Apps</option>
-            <option value="apps">Apps</option>
-            <option value="apps">Apps</option>
-            <option value="apps">Apps</option>
-        </select>
-        <input type="submit" value="enviar formulario">
-        <input type="reset" value="limpiar formulario">
-        <input type="button" value="no hace nada">
-    </form>
-    <footer class="main__footer">
+    <div class="container-fluid p-0">
+        <form class="row g-3 mt-3 m-5 p-3">
+
+            <div class="col-6">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu Email">
+            </div>
+            <div class="col-6">
+                <label for="inputpass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputpass" placeholder="Escribe tu contraseña">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Direccion">
+            </div>
+            <div class="col-6">
+                <label for="cityInput" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="cityInput" placeholder="ciudad">
+            </div>
+            <div class="col-3">
+                <label for="postalCodeInput" class="form-label">Codigo Postal</label>
+                <input type="text" class="form-control" id="postalCodeInput" placeholder="codigo postal">
+            </div>
+            <div class="col-3">
+                <label for="countryInput" class="form-label">Pais</label>
+                <input type="text" class="form-control" id="countryInput" placeholder="Pais">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input type="checkbox" id="checkterms" class="form-check-input">
+                    <label for="checkterms" class="form-check-label">Acepto Terminos y Condiciones </label>
+                </div>
+            </div>
+            <div class="col-12" >
+                <button type="submit" class="btn btn-primary">
+                    Registrate
+                </button>
+            </div>
+        </form>
+   <div class="mt-3 p-0 ">
+        <footer class="main__footer">
+        <form class="col-12 ">
         <img src="./img/fav-icon.svg" alt="logo empresa" />
         <p>Datos de contacto</p>
         <p>redes sociales</p>
+        </form>
     </footer>
+</div>
 </body>
 </html>
