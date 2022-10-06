@@ -8,7 +8,9 @@
 a {
   text-decoration: none;
 }
-
+.html {
+  font-family: 'Roboto', sans-serif;
+}
 .fixed {
   position: fixed;
   bottom: 40px;
@@ -90,6 +92,12 @@ a {
 .dropdown-menu a:hover ul {
   display: block !important;
 }  
+.main__header ul li:nth-child(1) {
+  border: 1px solid white;
+  border-radius: 55px;
+  padding: 0 162px;
+  padding-left: 38px;
+}
 .main__footer {
   width: 100%;
   height: 127px;
