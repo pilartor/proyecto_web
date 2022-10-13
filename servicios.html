@@ -15,7 +15,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <title>CampuHause</title>
+    <title>PlenitudHause</title>
 </head>
 
 <body class="pag_servicios">
@@ -52,10 +52,10 @@
                                 Servicios
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">webs</a>
-                                <a class="dropdown-item" href="#">apps</a>
+                                <a class="dropdown-item" href="#">Presencial</a>
+                                <a class="dropdown-item" href="#">Virtual</a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="./servicios.html">webs y apps</a>
+                                <a class="dropdown-item" href="./servicios.html">Hibrido</a>
                             </div>
                         </li>
                         <li class="nav-item active mx-lg-auto">
@@ -75,40 +75,42 @@
             </div>
         </nav>
     </header>
-    
+
     <main>
         <div class="container-fluid">
             <div class="row presentacion_servicios">
-            <!--inicio portada-->
-            <img class="cols-sm-6 p-0 our_portada" src="./img/proyectos.jpg" alt="desarrollo web" width="70px" height="70"/>
-            <h1 class="cols-sm-6 text-center">Servicios</h1>
-            <p class="cols-sm-6 text-center text-md-center">Lorem ipsum dolor.</p>
-        </div>
-        <!--fin portada--> 
-        <div class="row p-0  mt-md-4 m-md-3 contenedor_servicios">
-        <div class="cols-sm-6 col-md-3 card_servicios" style="background-image: url('./img/nosotros_autodidacta.jpg')">
-            <div class="textos_servicios">
-                <h3>Rock In Rio</h3>
-                <p>27 de Octubre 2021</p>
+                <!--inicio portada-->
+                <img class="cols-sm-6 p-0 portada_our" src="./img/proyectos.jpg" alt="desarrollo web" width="70px"
+                    height="70" />
+                <h1 class="cols-sm-6 text-center">Servicios</h1>
+                <p class="cols-sm-6 text-center text-md-center">Selecciona un servicio</p>
+            </div>
+            <!--fin portada-->
+            <div class="row p-0  mt-md-4 m-md-3 contenedor_servicios">
+                <div class="cols-sm-6 col-md-3 card_servicios"
+                    style="background-image: url('./img/nosotros_familiar.jpg')">
+                    <div class="textos_servicios">
+                        <h3>terapia familiar</h3>
+                        <p>Presencial y Virtual</p>
+                    </div>
+                </div>
+                <div class="cols-sm-6 col-md-3  px-md-5 card_servicios"
+                    style="background-image: url('./img/nosotros_parejas.jpg')">
+                    <div class="textos_servicios">
+                        <h3>Terapia de Pareja</h3>
+                        <p>Presencial y Virtual</p>
+                    </div>
+                </div>
+                <div class="cols-sm-6 col-md-3   card_servicios"
+                    style="background-image: url('./img/nosotros_dog.jpg')">
+                    <div class="textos_servicios">
+                        <h3>apoyo emocional</h3>
+                        <p>Presencial y Virtual</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="cols-sm-6 col-md-3  px-md-5 card_servicios" style="background-image: url('./img/nosotros_conocimiento.jpg')">
-            <div class="textos_servicios">
-                <h3>FalconMasters’ Concert</h3>
-                <p>12 de Noviembre 2021</p>
-            </div>
-        </div>
-        
-        <div class="cols-sm-6 col-md-3   card_servicios" style="background-image: url('./img/nosotros_dog.jpg')">
-            <div class="textos_servicios">
-                <h3>Rock In Rio Again</h3>
-                <p>1 de Enero 2021</p>
-            </div>
-        </div>
-    </div>
-    
-    </div>
-        
+
     </main>
     <div class="proyectos mt-4 mt-md-4">
         <img class="proyectos_real" src="./img/proyectos.jpg" alt="proyectos" />
@@ -119,14 +121,33 @@
         </button>
     </div>
     <div class="textos mt-4  mt-md-4 cols-sm-6 text-center text-md-center">
-        <h3>FalconMasters’ Concert</h3>
-        <p class="p-2 p-md-2" >12 de Noviembre 2021 lore Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, eum animi voluptatibus tempore accusantium, quisquam suscipit earum molestiae ipsa ducimus sint ut, possimus quos voluptate magnam voluptatem eius praesentium pariatur?</p>
+        <h3>Crecimiento Consciente</h3>
+        <p class="p-2 p-md-2">El crecimiento consciente significa alinearse con ciertos principios básicos que sirven
+            como aceleradores del crecimiento. Cuando vives alineado con ellos, experimentas un progreso más rápido y
+            consistente y niveles más profundos de satisfacción.</p>
     </div>
-    <footer class="container-fluid main__footer">
-        <div class="row-cols-12">
-            <img class=" logo_footer" src="./img/fav-icon.svg" alt="logo empresa"  width="70" height="70" />
-            <p>Datos de contacto</p>
-            <p>redes sociales lorem</p>
+    <footer class="container-fluid">
+        <div class="row p-2 main__footer text-white">
+            <img class=" logo_footer" src="./img/fav-icon.svg" alt="logo empresa" width="70" height="70" />
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h5 p-4">
+                    <a class="text-white text-decoration-none" href="https://github.com/pilartor/proyecto_web.git">
+                        <img src="./img/inicio_icons.svg" width="20" height="26" alt="">Imstagram
+                    </a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h5 p-4">
+                    <a class="text-white text-decoration-none" href="https://github.com/pilartor/proyecto_web.git">
+                        <img src="./img/inicio_icons.svg" width="20" height="26" alt="">github</a>
+                </p>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-4">
+                <p class="h5 p-4">
+                    <a class="text-white text-decoration-none" href="https://github.com/pilartor/proyecto_web.git">
+                        <img src="./img/inicio_icons.svg" width="20" height="26" alt="">Facebook</a>
+                </p>
+            </div>
         </div>
     </footer>
     <!-- JavaScript -->
