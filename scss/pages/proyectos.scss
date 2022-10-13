@@ -1,0 +1,36 @@
+.main__header_proyectos {
+    background: linear-gradient(180deg, #0d0d0d 19.79%, #575757 54.17%, rgba(162, 162, 162, 0.58) 79.69%, rgba(255, 255, 255, 0) 100%);
+    width: 100vw;
+    background-blend-mode: multiply;
+    grid-template-columns: 24% auto;
+    align-items: center;
+    z-index: 2;
+        & ul li {
+          width: 16%;
+          padding-left: 0%;
+        }
+        & a {
+          color: white !important;
+        }
+        & ul {
+          font-size: 1;
+        }
+        & ul li:nth-child(1) {
+          border: 1px solid white;
+          border-radius: 55px;
+          padding: 0 162px;
+          padding-left: 38px;
+        }
+        &_nav {
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 0 2%;
+        }
+      }
+
+.color_carusel{
+   background-color:  rgba(53, 53, 51, 0.192);
+}
+.texto_casusel{
+   color:  #171c26;
+}

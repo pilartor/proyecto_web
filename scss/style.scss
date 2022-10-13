@@ -4,6 +4,13 @@
 // Include any default variable overrides here (though functions won't be available)
 $font-family-sans-seritf :"Roboto", sans-serif;
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+@for $si from 1 to 10 {
+  .padding-#{$si}{
+    padding: 1rem * $si;
+  }
+}
+
 // Then add additional custom code here
 
 @import "../scss/pages/index.scss";
