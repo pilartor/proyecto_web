@@ -8381,33 +8381,6 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.padding-1 {
-  padding: 1rem; }
-
-.padding-2 {
-  padding: 2rem; }
-
-.padding-3 {
-  padding: 3rem; }
-
-.padding-4 {
-  padding: 4rem; }
-
-.padding-5 {
-  padding: 5rem; }
-
-.padding-6 {
-  padding: 6rem; }
-
-.padding-7 {
-  padding: 7rem; }
-
-.padding-8 {
-  padding: 8rem; }
-
-.padding-9 {
-  padding: 9rem; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -9070,7 +9043,78 @@ html {
     gap: 0 2%; }
 
 .color_carusel {
-  background-color: rgba(53, 53, 51, 0.192); }
+  background-color: rgba(241, 10, 10, 0.356); }
 
 .texto_casusel {
   color: #171c26; }
+
+.contactos_programas--secondary {
+  background-color: #747c8c; }
+
+.contactos_programas--danger {
+  background-color: #fe4461; }
+
+.contactos_programas--dark {
+  background-color: #0d0d0d; }
+
+.contactos_programas--azulmarino {
+  background-color: #171c26; }
+
+.shadowed, .proyectos_real_boton {
+  -webkit-box-shadow: 13px 11px 32px 19px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 11px 32px 19px rgba(0, 0, 0, 0.75);
+  box-shadow: 13px 11px 32px 19px rgba(0, 0, 0, 0.75); }
+
+.padding-1 {
+  padding: 1rem; }
+
+.padding-2 {
+  padding: 2rem; }
+
+.padding-3 {
+  padding: 3rem; }
+
+.padding-4 {
+  padding: 4rem; }
+
+.padding-5 {
+  padding: 5rem; }
+
+.padding-6 {
+  padding: 6rem; }
+
+.padding-7 {
+  padding: 7rem; }
+
+.padding-8 {
+  padding: 8rem; }
+
+.padding-9 {
+  padding: 9rem; }
+
+.padding-10 {
+  padding: 10rem; }
+
+.color_contactos--secondary {
+  background-color: #747c8c; }
+  .color_contactos--secondary .pag_contactos {
+    background-color: #747c8c;
+    color: #ffffff; }
+
+.color_contactos--danger {
+  background-color: #fe4461; }
+  .color_contactos--danger .pag_contactos {
+    background-color: #fe4461;
+    color: #ffffff; }
+
+.color_contactos--dark {
+  background-color: #0d0d0d; }
+  .color_contactos--dark .pag_contactos {
+    background-color: #0d0d0d;
+    color: #ffffff; }
+
+.color_contactos--azulmarino {
+  background-color: #171c26; }
+  .color_contactos--azulmarino .pag_contactos {
+    background-color: #171c26;
+    color: #ffffff; }

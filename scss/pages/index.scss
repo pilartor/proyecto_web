@@ -226,6 +226,7 @@ a {
 }
 
 .proyectos_real_boton {
+  @extend .shadowed;
   position: absolute;
   width: 200px;
   height: 50px;

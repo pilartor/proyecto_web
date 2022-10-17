@@ -1,0 +1,20 @@
+@import"../complements/variables";
+@for $si from 1 through 10 {
+  .padding-#{$si} {
+    padding: 1rem * $si;
+  }
+}
+@each $color, $color-claro in $colores {
+  .color_contactos--#{$color}{
+  background-color: map-get($color-claro, color);
+  .pag_contactos{
+    background-color: map-get($color-claro, color);
+    @if map-get($color-claro,lighcolor)==true {
+      color:$dark
+      
+    }@else{
+      color:$light
+    }
+  }
+  }
+}
