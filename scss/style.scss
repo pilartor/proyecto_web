@@ -1,7 +1,7 @@
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 // Then add additional custom code here
-
+@import"./complements/mixins";
 @import "../scss/pages/index.scss";
 @import "../scss/pages/nosotros";
 @import "../scss/pages/contacto";

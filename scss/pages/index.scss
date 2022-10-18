@@ -142,6 +142,7 @@ a {
 }
 
 .portada_boton {
+  @include box-shadow(5);
   position: absolute;
   width: 200px;
   height: 50px;
