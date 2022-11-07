@@ -1,19 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.body {
-  background: #171c26;
-  color: #e4e6e9;
-}
-html {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-}
-a {
-  text-decoration: none;
-}
 
 .fixed {
   position: fixed;
@@ -139,20 +123,117 @@ a {
 .portada_our {
   width: 100%;
   height: 100%;
-}
 
+  &_titulo {
+    position: absolute;
+    display: grid;
+    flex-direction: row;
+    color: black;
+    font-size: 5rem;
+    text-align: center;
+    align-items: center;
+    left: 1601px;
+    top: 297px;
+  }
+  &_subtitulo {
+    position: absolute;
+    left: 1678px;
+    top: 369px;
+    color: black;
+    font-size: 3.5rem;
+  }
+  @media (max-width: 1440px) {
+    &_titulo {
+      top: 166px;
+      left: 850px;
+      font-size: 3rem;
+    }
+    &_subtitulo {
+      top: 219px;
+      left: 902px;
+      font-size: 2rem;
+    }
+  }
+  @media (max-width: 1024px) {
+    &_titulo {
+      top: 125px;
+      left: 573px;
+      font-size: 2.3rem;
+    }
+    &_subtitulo {
+      top: 165px;
+      left: 619px;
+      font-size: 1.5rem;
+    }
+  }
+  @media (max-width: 768px) {
+    &_titulo {
+      top: 125px;
+      left: 428px;
+      font-size: 2rem;
+    }
+    &_subtitulo {
+      top: 165px;
+      left: 455px;
+      font-size: 1.4rem;
+    }
+  }
+  @media (max-width: 375px) {
+    &_titulo {
+      top: 155px;
+      left: 192px;
+      font-size: 1.5rem;
+    }
+    &_subtitulo {
+      top: 180px;
+      left: 191px;
+      font-size: 1rem;
+    }
+  }
+}
 .portada_boton {
   @include box-shadow(5);
   position: absolute;
-  width: 200px;
+  /* width: 200px;
   height: 50px;
   left: 754px;
-  top: 534px;
+  top: 534px; */
+  font-size: 2rem;
+  width: 255px;
+  height: 71px;
+  left: 1162px;
+  top: 811px;
   background: #0d0d0d;
   border-radius: 50px;
   text-align: center;
   align-items: center;
   color: aliceblue;
+
+  @media (max-width: 1440px) {
+    width: 200px;
+    height: 50px;
+    top: 448px;
+    left: 604px;
+    font-size: 1.5rem;
+  }
+  @media (max-width: 1024px) {
+    width: 200px;
+    height: 50px;
+    top: 314px;
+    left: 412px;
+    font-size: 1.3rem;
+  }
+  @media (max-width: 768px) {
+    top: 230px;
+    left: 283px;
+    font-size: 1rem;
+  }
+  @media (max-width: 375px) {
+    width: 185px;
+    height: 42px;
+    left: 95px;
+    top: 254px;
+  }
 }
 
 /*index fin portada*/
@@ -225,20 +306,42 @@ a {
   width: 100%;
   height: 100%;
 }
-
 .proyectos_real_boton {
   @extend .shadowed;
   position: absolute;
-  width: 200px;
-  height: 50px;
-  left: 763px;
-  top: 1118px;
+  width: 272px;
+  height: 80px;
+  left: 1131px;
+  top: 1537px;
   border: #fe4461;
   background: #fe4461;
   box-shadow: 0px 10px 32px 8px rgba(0, 0, 0, 0.38);
   border-radius: 50px;
   text-align: center;
   align-items: center;
+  font-size: 2rem;
+
+  @media (max-width: 1440px) {
+    width: 200px;
+    height: 50px;
+    left: 603px;
+    top: 978px;
+    font-size: 1.5rem;
+  }
+  @media (max-width: 1024px) {
+    width: 200px;
+    height: 50px;
+    top: 804px;
+    left: 419px;
+    font-size: 1.3rem;
+  }
+  @media (max-width: 768px) {
+      width: 199px;
+      height: 42px;
+      top: 764px;
+      left: 293px;
+      font-size: 1.3rem;
+}
 }
 /*index fin proyectos*/
 /*index inicio de contactos y datos extras*/
@@ -264,24 +367,24 @@ a {
     width: 100%;
   }
   &_programas:hover {
-    transform: scale(1.3);
+    transform: scaleY(1.3);
     border-radius: 30px;
     transition: all 1s;
   }
   &_caracteristicas:hover {
-    transform: scale(1.3);
+    transform: scaleY(1.3);
     border-radius: 30px;
     transition: all 1s;
   }
   &_galeria:hover {
-    transform: scale(1.3);
+    transform: scaleY(1.3);
     border-radius: 30px;
     transition: all 1s;
   }
   &_recursos:hover {
-    transform: scale(1.3);
+    transform: scaleY(1.1);
     border-radius: 30px;
-    transition: all 1s !important;
+    transition: all 1s;
   }
   &_caracteristicas {
     background: #171c26;
@@ -304,10 +407,6 @@ a {
     color: #fe4461;
     width: 100%;
   }
-  &_recursos:hover {
-    transform: scale(1.3);
-    border-radius: 30px;
-  }
 }
 /*index fin de contactos y datos extras*/
 /* inicio de las animaciones*/
@@ -328,10 +427,6 @@ a {
 }
 /* fin de las animaciones*/
 @media (max-width: 1440px) {
-  .portada_boton {
-    top: 448px;
-    left: 604px;
-  }
   .nosotros_lista li {
     padding: 4px 25px;
     margin: 6px 0 2px 183px;
@@ -348,16 +443,8 @@ a {
     margin-top: 50px;
     margin-left: 25px;
   }
-  .proyectos_real_boton {
-    left: 603px;
-    top: 978px;
-  }
 }
 @media (max-width: 1024px) {
-  .portada_boton {
-    top: 314px;
-    left: 412px;
-  }
   .nosotros_lista li {
     list-style: none;
     background-image: url(../img/icons_lista_nosotros.svg);
@@ -379,36 +466,10 @@ a {
   .servicios_texto {
     margin-top: 30px;
     margin-left: 34px;
-  }
-  .proyectos_real_boton {
-    top: 804px;
-    left: 419px;
-  }
-  .contactos {
-    &_programas:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-    &_caracteristicas:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-    &_galeria:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-    &_recursos:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
   }
 }
 
 @media (max-width: 768px) {
-  .portada_boton {
-    top: 230px;
-    left: 283px;
-  }
   .nosotros_lista li {
     list-style: none;
     background-image: url(../img/icons_lista_nosotros.svg);
@@ -429,34 +490,9 @@ a {
   .servicios_texto {
     margin: 9%;
   }
-  .proyectos_real_boton {
-    width: 199px;
-    height: 42px;
-    top: 764px;
-    left: 293px;
-  }
-  .contactos {
-    &_programas:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-    &_caracteristicas:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-    &_galeria:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-    &_recursos:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-  }
 }
 @media (max-width: 375px) {
   .main__header {
-    background: #747c8c !important;
     &ul li {
       width: 16%;
     }
@@ -504,10 +540,6 @@ a {
     font-family: "Roboto";
     text-align: center;
     line-height: 1.6;
-  }
-  .portada_boton {
-    left: 95px;
-    top: 254px;
   }
   .nosotros_servicios {
     margin: 0;
@@ -592,21 +624,12 @@ a {
       width: 100%;
       height: 268px;
     }
-    &_programas:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-    &_caracteristicas:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-    &_galeria:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
-    }
-    &_recursos:hover {
-      transform: scale(1.3);
-      border-radius: 30px;
+    &_programas {
+      background: #fe4461;
+      align-items: center;
+      text-align: center;
+      color: #171c26;
+      width: 100%;
     }
   }
 }
